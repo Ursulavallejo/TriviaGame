@@ -1,0 +1,259 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #5570f6;
+  color: #ffffff;
+  overflow-x: hidden;
+  background-image: url('assets/questions.webp');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #620451;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+  background-color: #343a40;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #043a7b;
+  position: relative;
+  color: #ffffff;
+}
+
+.main-content {
+  text-align: center;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+.action-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.action-buttons button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 0.5em 1.5em;
+}
+
+.action-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styling */
+.modal-content {
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  color: #212529;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-body {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Blur background when modal is open */
+.blur-background {
+  filter: blur(8px);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.modal-content {
+  margin: auto;
+  border-radius: 15px;
+}
+
+/* Adjustments for light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  body {
+    background-color: #e9ecef;
+    color: #212529;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    color: #000000;
+  }
+
+  button:hover {
+    background-color: #f1f1f1;
+    border-color: #646cff;
+  }
+
+  .modal-content {
+    background-color: #ffffff;
+    color: #212529;
+  }
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: purple;
+  color: #ffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  border-color: 1px rosybrown;
+  text-align: center;
+}
+
+/* SCROLLBAR */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* RESET FAIL */
+.fail-message {
+  animation: shake 0.5s ease-in-out infinite;
+  color: red;
+  font-size: 20px;
+  margin: 20px 0;
+}
+#style-fail {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  z-index: 2;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #000000;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}

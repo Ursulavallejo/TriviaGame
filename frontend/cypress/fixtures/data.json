@@ -1,0 +1,34 @@
+[
+  {
+    "id": 2,
+    "question": "Who is the main character in the Disney movie 'The Lion King'?",
+    "correctanswer": "Simba",
+    "incorrectanswer1": "Mufasa",
+    "incorrectanswer2": "Timon",
+    "incorrectanswer3": "Pumbaa"
+  },
+  {
+    "id": 3,
+    "question": "What is the name of the magical school attended by Harry Potter?",
+    "correctanswer": "Hogwarts",
+    "incorrectanswer1": "Beauxbatons",
+    "incorrectanswer2": "Durmstrang",
+    "incorrectanswer3": "Ilvermorny"
+  },
+  {
+    "id": 4,
+    "question": "Who wrote the novel 'Pride and Prejudice'?",
+    "correctanswer": "Jane Austen",
+    "incorrectanswer1": "Charlotte Bronte",
+    "incorrectanswer2": "Charles Dickens",
+    "incorrectanswer3": "Emily Bronte"
+  },
+  {
+    "id": 5,
+    "question": "In the Disney movie 'Aladdin', what is the name of Aladdin's pet monkey?",
+    "correctanswer": "Abu",
+    "incorrectanswer1": "Iago",
+    "incorrectanswer2": "Rajah",
+    "incorrectanswer3": "Jafar"
+  }
+]
