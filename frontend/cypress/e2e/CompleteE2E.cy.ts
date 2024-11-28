@@ -16,11 +16,6 @@ describe('Complete E2E Test without mock', () => {
     cy.get('.input-add-incorrect').each(($input, index) => {
       cy.wrap($input).type(newQuestion.incorrectanswers[index])
     })
-
-    // Why with ID do not work?
-    // cy.get('#input-add-incorrect-0').eq(0).type(newQuestion.incorrectanswers[0])
-    // cy.get('#input-add-incorrect-1').eq(1).type(newQuestion.incorrectanswers[1])
-    // cy.get('#input-add-incorrect-2').eq(2).type(newQuestion.incorrectanswers[2])
     cy.get('#btn-add').click()
 
     // Backend & Database: Verify the new question exists

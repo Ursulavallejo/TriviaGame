@@ -10,7 +10,7 @@ import { Question } from './interfaces'
 import triviaImage from './assets/trivia.webp'
 
 function App() {
-  const [data, setData] = useState<Question[]>([])
+  const [data, setData] = useState<Question[]>([]) // generic
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0)
   const [correctAnswers, setCorrectAnswers] = useState<number>(0)
   const [incorrectAnswers, setIncorrectAnswers] = useState<number>(0)
