@@ -42,6 +42,10 @@ Special focus was given to test coverage and testing best practices.
 
 This project fulfills both the **functional** and **testing** requirements for the course, with advanced coverage and automation in place.
 
+
+https://github.com/user-attachments/assets/329a43cf-5d60-4463-980d-a12a4a887777
+
+
 ---
 
 ### 🛠️ Technologies Used
