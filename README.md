@@ -38,8 +38,11 @@ $ npm run dev
 
 ```bash
 $ psql --username=postgres
+CREATE DATABASE trivia;
+\c trivia;
 ```
 
+Create Questions and content ( db.sql)
 **>>Kör in backend/db.sql för att skapa tabeller.**
 
 ---
